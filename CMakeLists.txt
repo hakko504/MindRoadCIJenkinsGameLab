@@ -20,6 +20,7 @@ set(Sources
     GameLogic.cpp
     )
 
+add_library(${This} STATIC ${Sources} ${Headers})
 add_executable(${This} STATIC ${Sources} ${Headers})
 
 add_subdirectory(test)
